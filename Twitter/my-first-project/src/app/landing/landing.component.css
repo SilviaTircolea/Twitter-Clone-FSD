@@ -1,0 +1,153 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  /* Page styles */
+  body {
+    background-color: #000000;
+    color: #ffffff;
+    font-family: Arial, sans-serif;
+    line-height: 2.6;
+  }
+
+  .content {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .toolbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #000000;
+    color: #ffffff;
+    padding: 16px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    border-radius: 20px;
+  }
+
+  .toolbar img {
+    width: 50px;
+    height: 50px;
+    margin-right: 8px;
+  }
+
+  h2 {
+    margin-top: 24px;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+  }
+
+  .container {
+    background-color: #1da1f2;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  label {
+    display: inline-block;
+    width: 100px;
+    color: #ffffff;
+  }
+
+  input,
+  select {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: none;
+  }
+
+  button[type="submit"],
+  button[type="button"] {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: none;
+    background-color: #1da1f2;
+    color: #000000;
+    cursor: pointer;
+  }
+
+  p {
+    margin-top: 20px;
+    text-align: center;
+  }
+
+  p a {
+    color: #0c87c6;
+    text-decoration: none;
+  }
+
+  p a:hover {
+    text-decoration: underline;
+  }
+
+  footer {
+    text-align: center;
+    margin-top: 40px; /* Add margin-top to create space between the content and footer */
+    color: #ffffff;
+  }
+
+  footer p {
+    color: #ffffff;
+  }
+
+  .container {
+    background-color: #1da1f2;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    margin-bottom: 20px;
+
+  }
+
+  .login-heading {
+    color: #ffffff;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+
+  .toolbar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #000000;
+    color: #ffffff;
+    padding: 16px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    border-radius: 20px;
+  }
+
+  .toolbar-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .toolbar-content img {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 8px;
+  }
+
+  .toolbar-content h2 {
+    margin: 0;
+  }

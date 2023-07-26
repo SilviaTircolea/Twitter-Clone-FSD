@@ -1,0 +1,26 @@
+
+<div>
+  <h1>Login</h1>
+  <nav>
+    <ul>
+      <li><a routerLink="/register">Register</a></li>
+      <li><a routerLink="/login">Login</a></li>
+      <li><a routerLink="/profile">Profile</a></li>
+    </ul>
+  </nav>
+  <router-outlet></router-outlet>
+</div>
+
+<h2>Login</h2>
+<form (ngSubmit)="login()">
+  <div>
+    <label for="email">Email:</label>
+    <input type="email" id="email" [(ngModel)]="email" required>
+  </div>
+  <div>
+    <label for="password">Password:</label>
+    <input type="password" id="password" [(ngModel)]="password" required>
+  </div>
+  <button type="submit"><b>Login</b></button>
+  <p><b>Don't have an account? </b><a (click)="goToLogin()"><b>Register here</b></a></p>
+</form>

@@ -1,0 +1,108 @@
+
+.retweeted-by{
+    font-size: 16px;
+  }
+  
+  .tweet-header{
+    font-size: 24px;
+  }
+  
+  .reply-form__text-area{
+    width: 95%;
+  }
+  
+  .tweet-content{
+    cursor: text;
+  }
+  
+  
+  .overlay {
+    position: fixed;
+    display: none;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.3);
+    z-index: 5;
+  }
+
+  .overlay__reply{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    font-size: 36px;
+    color: black;
+    background-color: white;
+    transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+    height: fit-content;
+    width: 30%;
+    border-radius: 18px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .tweet-form__text-area, .reply-form__text-area{
+    margin: 10px;
+    resize: none;
+    width: 500px;
+    height: 80px;
+    border: none;
+    font-size: 25px;
+    outline: none;
+}
+
+.reply-form__text-area{
+    width: 450px;
+    outline: none;
+    border: none;
+}
+
+.tweet-form__footer-button, .reply-form__button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background-color: #1D9BF0;
+    width: 75px;
+    height: 45px;
+    border-radius: 30px;
+    border: none;
+}
+
+.tweet-form__footer-button:hover, .reply-form__button{
+    cursor: pointer;
+}
+
+.tweet-icon-container, .tweet-footer__icons{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    
+}
+
+
+.tweet-footer__icon, .retweeted-by img{
+    width: 20px;
+    padding: 10px;
+    border-radius: 15px;
+}
+
+.tweet-footer__icon:hover{
+    background-color: rgba(0, 0, 0, 0.09);
+    cursor: pointer;
+}
+
+.tweet-icon, .tweet-footer__icon{
+    width: 20px;
+    padding: 10px;
+    border-radius: 15px;
+}
+
+.tweet-icon:hover, .tweet-footer__icon:hover{
+    background-color: rgba(0, 0, 0, 0.09);
+    cursor: pointer;
+}

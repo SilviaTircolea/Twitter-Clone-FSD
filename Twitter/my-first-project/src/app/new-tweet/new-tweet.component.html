@@ -1,0 +1,10 @@
+<form class="flex flex-col mb-2 p-2" (ngSubmit)="onSubmit($event)">
+    <div class="flex">
+      <img class="w-10 h-10 mr-4 inline-block rounded-full shadow-lg" src="https://cdn2.iconfinder.com/data/icons/avatar-181/48/avatar_face_man_boy_girl_female_male_woman_profile_smiley_happy_people-05-512.png">
+      <input name="message" [(ngModel)]="tweetMessage" style="border: 3px solid rgb(48, 135, 234);border-radius: 5px;" class="flex-1 focus:outline-none" placeholder="What's happening!"/>
+    </div>
+    <div class="flex justify-end">
+      <button class="tweet-button" [disabled]="isTweetEmpty" [ngClass]="isTweetEmpty ? 'bg-gray-300 hover:bg-gray-300' : 'bg-blue-400 hover:bg-blue-500 '" type="submit">Post</button>
+    </div>
+  </form>
+  

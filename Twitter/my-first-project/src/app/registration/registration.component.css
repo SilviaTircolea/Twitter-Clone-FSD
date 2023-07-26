@@ -1,0 +1,97 @@
+/* Registration Page Styles */
+body {
+  background-color: #000000;
+  color: #ffffff;
+  font-family: Arial, sans-serif;
+  line-height: 2.0;
+}
+
+.container {
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+h2 {
+  margin-top: 24px;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.logo {
+  margin-bottom: 20px;
+}
+
+.logo img {
+  width: 50px;
+  height: 50px;
+  display: block;
+  margin: 0 auto;
+}
+
+.form-group {
+  margin-bottom: 20px;
+  width: 80%;
+  margin: auto;
+}
+
+
+input,
+select {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: none;
+}
+
+.dob-select {
+  display: flex;
+  align-items: center;
+}
+
+.dob-select select {
+  flex: 1;
+  margin-right: 10px;
+}
+
+button[type="submit"] {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: none;
+  background-color: #1da1f2;
+  color: #000000;
+  cursor: pointer;
+}
+
+footer {
+  text-align: center;
+  margin-top: 40px;
+  color: #ffffff;
+}
+
+footer p {
+  color: #ffffff;
+}
+
+
+.dob-select label {
+  display: inline-block;
+  width: auto;
+  margin-right: 10px;
+  color: #ffffff;
+}
+
+form {
+  background-color: #1da1f2;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  width: 110%;
+}

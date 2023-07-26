@@ -1,0 +1,7 @@
+
+Otypescript:S1128".Remove this unused import of 'ActivatedRoute'.(ùªÔœøÿÿÿÿ
+Ntypescript:S1128"-Remove this unused import of 'NavigationEnd'.(ùªÔœøÿÿÿÿ
+Gtypescript:S1128"&Remove this unused import of 'ITweet'.(Œ¦£ñýÿÿÿÿ
+†typescript:S6606""jPrefer using nullish coalescing operator (`??`) instead of a logical or (`||`), as it is a safer operator.(¿êÓ¯
+†typescript:S6606("jPrefer using nullish coalescing operator (`??`) instead of a logical or (`||`), as it is a safer operator.(¿êÓ¯
+—typescript:S2681*"vThis line will not be executed conditionally; only the first statement will be. The rest will execute unconditionally.(Þ±½Œøÿÿÿÿ

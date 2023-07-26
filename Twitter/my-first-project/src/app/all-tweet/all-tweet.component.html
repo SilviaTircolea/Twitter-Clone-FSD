@@ -1,0 +1,64 @@
+<div class="tweet flex" *ngIf="tweet">
+    <div style="width: 36px;margin-right: 12px;">
+      <img
+        style="display: inline-block;
+        border-radius: 50%;
+        box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+        width: 100%;
+        height: 36px;"
+        src="{{tweet.by.profileURL}}"
+      />
+    </div>
+    <div style="flex: 1;">
+      <div style="display: flex;">
+        <!-- username -->
+        <div class="tweet__username">
+          <a href="https://twitter.com/{{tweet.by.username}}">
+            <span style="font-weight: 600;">{{tweet.by.name}}</span>
+            <span style="margin-left: 1rem;
+            margin-right: 1rem;" *ngIf="tweet.by.username">@{{tweet.by.username}}</span>
+          </a>
+        </div>
+        <div class="tweet__time-ago">. {{tweetCreatedAt}}</div>
+      </div>
+      <div>
+        <!-- message -->
+        {{tweet.content}}
+      </div>
+      <div style="justify-content: center;display: flex;">
+        <!-- actions -->
+        <div [class.text-red-500]="tweet.liked" style=" transition: all 0.3s ease;
+        margin-right: 10px;
+        cursor: pointer; display: flex;
+  align-items: center;" (click)="tweetLiked.emit(tweet)">
+          <span style="width: 4px;
+          height: 4px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          position: relative;
+          bottom: 2px;">
+            <i class="{{tweet.liked ? 'fas' : 'far' }} fa-heart"></i>
+          </span>
+          <span style="margin-left: 10px;">{{tweet.likedBy.length}}</span>
+        </div>
+        <div style="transition: all 0.3s ease;
+        margin-right: 10px;
+        cursor: pointer;
+        display: flex;
+       align-items: center;"  (click)="commentOnTweet()">
+          <span style="width: 4px;
+          height: 4px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          position: relative;
+          bottom: 2px; ">
+            <i class="far fa-comment"></i>
+          </span>
+          <span style="margin-left: 10px;">{{tweet.commentedBy.length}}</span>
+        </div>
+      </div>
+    </div>
+  </div>
+  

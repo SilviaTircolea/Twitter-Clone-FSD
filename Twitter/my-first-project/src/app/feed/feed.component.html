@@ -1,0 +1,27 @@
+
+<div>
+  <h1>Menu</h1>
+  <nav>
+    <ul>
+      <li><a routerLink="/register">Register</a></li>
+      <li><a routerLink="/login">Login</a></li>
+      <li><a routerLink="/feed">Feed</a></li>
+    </ul>
+  </nav>
+  <router-outlet></router-outlet>
+</div>
+
+<h2>Feed</h2>
+<div>
+  <textarea [(ngModel)]="newTweet" placeholder="Compose a new tweet"></textarea>
+  <button (click)="postTweet()">Tweet</button>
+</div>
+<ul>
+  <li *ngFor="let tweet of tweets">
+    <div>
+    </div>
+      <span (click)="likeTweet(tweet)"><button type="submit">Like</button></span>
+      <span (click)="commentOnTweet(tweet)"><button type="submit">Comment</button></span>
+      <span (click)="retweet(tweet)"><button type="submit">Retweet</button></span>
+  </li>
+</ul>

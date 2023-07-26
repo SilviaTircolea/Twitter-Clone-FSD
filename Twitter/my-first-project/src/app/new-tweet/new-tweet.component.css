@@ -1,0 +1,84 @@
+/* Normal CSS equivalent */
+.flex {
+    display: flex;
+  }
+  
+  .flex-col {
+    flex-direction: column;
+  }
+  
+  .mb-2 {
+    margin-bottom: 2px;
+  }
+  
+  .p-2 {
+    padding: 20px;
+  }
+  
+  /* Normal CSS equivalent */
+.w-10 {
+    width: 2.5rem; /* Assuming 1rem is equal to 16px, so 2.5rem is equal to 40px */
+  }
+  
+  .h-10 {
+    height: 2.5rem; /* Assuming 1rem is equal to 16px, so 2.5rem is equal to 40px */
+  }
+  
+  .mr-4 {
+    margin-right: 1rem; /* Assuming 1rem is equal to 16px */
+  }
+  
+  .inline-block {
+    display: inline-block;
+  }
+  
+  .rounded-full {
+    border-radius: 9999px; /* A large value to make it a perfect circle */
+  }
+  
+  .shadow-lg {
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+
+  /* Normal CSS equivalent */
+.flex-1 {
+    flex: 1;
+  }
+  
+  :focus {
+    outline: none;
+  }
+
+  .justify-end {
+    justify-content: flex-end;
+  }
+  
+  .tweet-button{
+    padding-left: 0.5rem; 
+    padding-right: 0.5rem; 
+    font-size: 0.875rem; 
+    text-align: center;
+    border-radius: 0.5rem; 
+    color: #dce0e6;
+    background-color: #3b82f6 !important;
+    margin-top: 5px; 
+  }
+
+/* Normal CSS equivalent */
+.bg-gray-300 {
+    background-color: #d1d5db; 
+  }
+  
+  .hover\:bg-gray-300:hover {
+    background-color: #d1d5db; 
+  }
+  
+  .bg-blue-400 {
+    background-color: #60a5fa; 
+  }
+  
+  .hover\:bg-blue-500:hover {
+    background-color: #3b82f6; 
+  }
+  

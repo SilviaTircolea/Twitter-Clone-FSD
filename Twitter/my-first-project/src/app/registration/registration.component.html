@@ -1,0 +1,51 @@
+<body>
+  <div class="container">
+    <div class="logo">
+      <img src="../../assets/tweeter.JPG" alt="Twitter Logo">
+    </div>
+    <h2>Registration</h2>
+    <form (submit)="register()">
+      <div class="form-group">
+        <label for="name">Name:</label>
+        <input type="text" id="name" required>
+      </div>
+      <div class="form-group">
+        <label for="email">Email:</label>
+        <input type="email" id="email" required>
+      </div>
+      <div class="form-group">
+        <label for="password">Password:</label>
+        <input type="password" id="password" required>
+      </div>
+      <div class="form-group">
+        <h3><label for="dob">Date of Birth</label></h3>
+        <h6>*This will not be shown publicly. Confirm your own age, even if this account is for a business, a pet, or something else.</h6>
+        <div class="dob-select">
+          <select id="day" name="day">
+            <option value="">Day</option>
+
+            <ng-container *ngFor="let day of days">
+              <option [value]="day">{{ day }}</option>
+            </ng-container>
+          </select>
+          <select id="month" name="month">
+            <option value="">Month</option>
+            <ng-container *ngFor="let month of months">
+              <option [value]="month.value">{{ month.name }}</option>
+            </ng-container>
+          </select>
+          <select id="year" name="year">
+            <option value="">Year</option>
+            <ng-container *ngFor="let year of years">
+              <option [value]="year">{{ year }}</option>
+            </ng-container>
+          </select>
+        </div>
+      </div>
+      <button type="submit"><b>Register</b></button>
+    </form>
+  </div>
+  <footer>
+    <p>&copy; 2023 Twitter. This is just a copy done by Silvia Tircolea &copy;</p>
+  </footer>
+</body>

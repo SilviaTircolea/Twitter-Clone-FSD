@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />  <meta name="viewport" content="width=device-width, initial-scale=1">
+<body>
+    <header class="sidebar">
+        <app-navbar></app-navbar>
+    </header>
+
+    <main class="main">
+          <section>
+            <div class="profile_post_follow_bx">
+              <div class="profile_box">
+                  <div class="profile_card">
+                      <img src="../../assets/icon/bluetick.png" alt="" class="blue_tick_pc">
+                      <img src="../../assets/img/user.png" alt="" class="profile_img">
+                      <h5>{{userName | titlecase}}</h5>
+                      <h6>@{{userName}}</h6>
+                      <address>
+                          <a href="#"><i class="fas fa-map-marker-alt"></i>Cork,Ireland</a>
+
+                          <a href="#">
+                              <i class="fas fa-globe-americas"></i>
+                          </a>
+                      </address>
+                      <p>Software Engineer@Dell</p>
+                      <div class="data">
+                          <div class="data_card">
+                              <p>Twitter</p>
+                              <h4>857</h4>
+                          </div>
+                          <div class="data_card">
+                              <p>Followers</p>
+                              <h4>41.2K</h4>
+                          </div>
+                          <div class="data_card">
+                              <p>Following</p>
+                              <h4>560</h4>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="activity_bx">
+                      <div class="activity_card_bx">
+                          <i class="fas fa-eye"></i>
+                          <h6>Activity</h6>
+                      </div>
+                      <div class="activity_card_bx">
+                          <i class="fas fa-bolt"></i>
+                          <h6>Moments</h6>
+                      </div>
+                      <div class="activity_card_bx">
+                          <i class="fas fa-users"></i>
+                          <h6>Friends</h6>
+                      </div>
+                      <div class="activity_card_bx">
+                          <i class="fas fa-cog"></i>
+                          <h6>Edit Profile</h6>
+                      </div>
+                  </div>
+              </div>
+              <div class="post_follow_bx">
+                  <div class="post">
+                      <nav>
+                          <ul>
+                              <li><a href="#"></a>Tweets</li>
+                              <li><a href="#"></a>Tweets & Followers</li>
+                              <li><a href="#"></a>Media</li>
+                              <li><a href="#"></a>Likes</li>
+                          </ul>
+                          <i class="fas fa-ellipsis-h"></i>
+                      </nav>
+                      <div class="post_main_bx">
+                          <div class="post_card_bx">
+                              <div class="post_profile">
+                                  <img src="../../assets/img/user.png" alt="">
+                              </div>
+                              <div class="content">
+                                  <h6 class="retweet"><i class="fas fa-retweet"></i> RONALDO RETWEETED</h6>
+                                  <div class="user_name_time">
+                                      <h5>{{userName | titlecase}} <img src="../../assets/icon/bluetick.png" alt=""><p>@{{userName}}</p></h5>
+                                      <h6><i class="far fa-clock"></i> 30 mins</h6>
+                                  </div>
+                                  <h3>Very Good words...</h3>
+                                  <div class="retweet_content_bx">
+                                      <div class="user_name_time">
+                                          <h5><img src="../../assets/img/ronaldo_2.jpg" alt="">Cristiano Ronaldo<p>@ronaldo</p></h5>
+                                          <h6><i class="far fa-clock"></i> 2 hour</h6>
+                                      </div>
+                                      <h3>Focus on the outcome not the obstacles!</h3>
+                                  </div>
+                                  <div class="tweet_card_social_data">
+                                      <div class="tweet_social_card">
+                                          <i class="fas fa-comment"></i>
+                                          <span>34</span>
+                                      </div>
+                                      <div class="tweet_social_card">
+                                          <i class="fas fa-retweet"></i>
+                                          <span>40</span>
+                                      </div>
+                                      <div class="tweet_social_card">
+                                          <i class="fas fa-heart"></i>
+                                          <span>543</span>
+                                      </div>
+                                      <div class="tweet_social_card">
+                                          <i class="fas fa-share"></i>
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+                          <div class="post_card_bx">
+                              <div class="post_profile">
+                                  <img src="../../assets/img/user.png" alt="">
+                              </div>
+                              <div class="content">
+                                  <div class="user_name_time">
+                                      <h5>{{userName | titlecase}} <img src="../../assets/icon/bluetick.png" alt=""><p>@{{userName}}</p></h5>
+                                      <h6><i class="far fa-clock"></i> 30 mins</h6>
+                                  </div>
+                                  <h3>📸 HOP OF THE MORNING: Revelers in party spirit ahead of the St. Patrick’s Day Parade in Dublin, Ireland. </h3>
+                                  <div class="image_post_bx">
+                                      <img src="../../assets/img/parade_1.jpeg" alt="">
+                                      <img src="../../assets/img/parade_2.jpeg" alt="">
+                                      <img src="../../assets/img/parade_3.jpeg" alt="">
+                                      <img src="../../assets/img/parade_4.jpeg" alt="">
+                                  </div>
+                                  <div class="tweet_card_social_data">
+                                      <div class="tweet_social_card">
+                                          <i class="fas fa-comment"></i>
+                                          <span>4.2K</span>
+                                      </div>
+                                      <div class="tweet_social_card">
+                                          <i class="fas fa-retweet"></i>
+                                          <span>375K</span>
+                                      </div>
+                                      <div class="tweet_social_card">
+                                          <i class="fas fa-heart"></i>
+                                          <span>789.5k</span>
+                                      </div>
+                                      <div class="tweet_social_card">
+                                          <i class="fas fa-share"></i>
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+                          <div class="post_card_bx">
+                              <div class="post_profile">
+                                  <img src="../../assets/img/user.png" alt="">
+                              </div>
+                              <div class="content">
+                                  <div class="user_name_time">
+                                      <h5>{{userName | titlecase}} <img src="../../assets/icon/bluetick.png" alt=""><p>@{{userName}}</p></h5>
+                                      <h6><i class="far fa-clock"></i> 30 mins</h6>
+                                  </div>
+                                  <h3>Dublin, Ireland 😍( I'll be there in nine days. 🎉❤😉👋 )</h3>
+                                  <div class="image_post_bx">
+                                      <img src="../../assets/img/dublin_1.jpeg" alt="">
+                                      <img src="../../assets/img/dublin_2.jpeg" alt="">
+                                      <img src="../../assets/img/dublin_3.jpeg" alt="">
+                                  </div>
+                                  <div class="tweet_card_social_data">
+                                      <div class="tweet_social_card">
+                                          <i class="fas fa-comment"></i>
+                                          <span>56K</span>
+                                      </div>
+                                      <div class="tweet_social_card">
+                                          <i class="fas fa-retweet"></i>
+                                          <span>37</span>
+                                      </div>
+                                      <div class="tweet_social_card">
+                                          <i class="fas fa-heart"></i>
+                                          <span>3.5k</span>
+                                      </div>
+                                      <div class="tweet_social_card">
+                                          <i class="fas fa-share"></i>
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+              <div class="follow_bx">
+                  <div class="trend_for_you">
+                      <nav>
+                          <h6>Trends for you</h6>
+                          <i class="fas fa-cog"></i>
+                      </nav>
+                      <div class="trend_bx">
+                          <div class="rate">
+                              <li><a href="#">#cricket<br><p>988K tweets</p></a> <i class="fas fa-chevron-down"></i></li>
+                              <div class="interest">
+                                  <button class="smile"><i class="fas fa-smile"></i>Interested</button>
+                                  <button class="frown"><i class="fas fa-frown"></i>Not Interested</button>
+                              </div>
+                          </div>
+                          <div class="rate">
+                              <li><a href="#">#earthquake<br><p>857K tweets</p></a> <i class="fas fa-chevron-down"></i></li>
+                              <div class="interest">
+                                  <button class="smile"><i class="fas fa-smile"></i>Interested</button>
+                                  <button class="frown"><i class="fas fa-frown"></i>Not Interested</button>
+                              </div>
+                          </div>
+                          <div class="rate">
+                              <li><a href="#">#Oppenheimer<br><p>548K tweets</p></a> <i class="fas fa-chevron-down"></i></li>
+                              <div class="interest">
+                                  <button class="smile"><i class="fas fa-smile"></i>Interested</button>
+                                  <button class="frown"><i class="fas fa-frown"></i>Not Interested</button>
+                              </div>
+                          </div>
+                          <div class="rate">
+                              <li><a href="#">#nolan<br><p>325K tweets</p></a> <i class="fas fa-chevron-down"></i></li>
+                              <div class="interest">
+                                  <button class="smile"><i class="fas fa-smile"></i>Interested</button>
+                                  <button class="frown"><i class="fas fa-frown"></i>Not Interested</button>
+                              </div>
+                          </div>
+                          <div class="rate">
+                              <li><a href="#">#Mbappe<br><p>115K tweets</p></a> <i class="fas fa-chevron-down"></i></li>
+                              <div class="interest">
+                                  <button class="smile"><i class="fas fa-smile"></i>Interested</button>
+                                  <button class="frown"><i class="fas fa-frown"></i>Not Interested</button>
+                              </div>
+                          </div>
+                          <button class="see_more">SEE MORE</button>
+                      </div>
+                  </div>
+                  <div class="you_should_follow trend_for_you">
+                      <nav>
+                          <h6>You should follow</h6>
+                          <i class="fas fa-redo-alt"></i>
+                      </nav>
+                      <div class="follow_bx">
+                          <div class="follow_profile_name">
+                              <img src="../../assets/img/biden.jpg" alt="" class="follow_profile">
+                              <div class="user_name">
+                                  <div class="user_name_follow">
+                                      <h6>President Biden</h6> <img src="../../assets/icon/bluetick.png" alt="">
+                                  </div>
+                                  <p>@biden</p>
+                              </div>
+                          </div>
+                          <button>follow</button>
+                      </div>
+                      <div class="follow_bx">
+                          <div class="follow_profile_name">
+                              <img src="../../assets/img/elon.jpg" alt="" class="follow_profile">
+                              <div class="user_name">
+                                  <div class="user_name_follow">
+                                      <h6>Elon Musk</h6> <img src="../../assets/icon/bluetick.png" alt="">
+                                  </div>
+                                  <p>@elonmusk</p>
+                              </div>
+                          </div>
+                          <button>follow</button>
+                      </div>
+                      <div class="follow_bx">
+                          <div class="follow_profile_name">
+                              <img src="../../assets/img/selena.jpg" alt="" class="follow_profile">
+                              <div class="user_name">
+                                  <div class="user_name_follow">
+                                      <h6>Selena Gomez</h6> <img src="../../assets/icon/bluetick.png" alt="">
+                                  </div>
+                                  <p>@selenagomez</p>
+                              </div>
+                          </div>
+                          <button>follow</button>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          </section>
+    </main>
+</body>
+
+</html>
